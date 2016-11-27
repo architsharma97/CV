@@ -1,0 +1,193 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+\usepackage{geometry}
+\geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=30mm,
+ right=30mm,
+ top=20mm,
+ bottom=25mm,
+}
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+\usepackage{longtable}
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+% fake table item
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+%WATERMARK TEST [**not part of a CV**]---------------
+%\font\wm=''Baskerville:color=787878'' at 8pt
+%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
+%{\wm 
+%	\begin{textblock}{1}(0,0)
+%		\rotatebox{-90}{\parbox{500mm}{
+%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
+%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
+%		}
+%	}
+%	\end{textblock}
+%}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge \textsc{Archit Sharma}
+	}\\\vspace{1mm} \hspace{-4mm}\href{mailto:architsh@iitk.ac.in}{architsh@iitk.ac.in} | \href{https://github.com/architsharma97/}{Github} \bigskip\par}
+
+%--------------------SECTIONS-----------------------------------
+%Section: Education
+\section{Education}
+\begin{tabular}{rl}	
+\textsc{2018} & \large Bachelor of Technology, \textsc{IIT Kanpur}\\
+Expected & {Major}: \textit{Electrical Engineering} \\
+         & {Minor}: \textit{Computer Science (Artificial Intelligence)}\\ 
+         & {CPI}: \textsc{9.8/10} \\
+         & \\
+\textsc{2014} & \large DAV Public School, Amritsar\\
+              & AISSCE, XII Board: 95/100\\
+              & AISSE, X Board: 10/10\\
+\end{tabular}
+%Section: Achievements
+\section{Achievements}
+\begin{tabular}{rl}
+2016 & \textsc{Departmental Rank 1} out of 140 undergraduates in Electrical
+Engineering \\
+2016 & Secured 63 rank in online round for \textsc{ACM ICPC India Regionals}.\\
+2016 & Selected for \textsc{Texas A\&M-IITK Summer Research Internship Program}.\\ 
+& Only student to achieve so in \textsc{sophomore} year.\\
+2016 & Awarded $A^*$ for exceptional performance in five courses.\\
+2015 & Awarded \textsc{Academic Excellence Award} by IIT Kanpur.\\
+2014 & Secured 376 rank in \textsc{JEE Advanced} among 150,000 students.\\
+2014 & Secured 730 rank in \textsc{JEE Mains} among 1.2 million students. \\
+2012 & Secured \textsc{first position} in IX-X category in \textsc{NASA Ames Space Settlement Design}\\
+&\textsc{Contest} among submissions from over 14 countries.\\
+2010 & Awarded \textsc{National Talent Search Scholarship} (NTSE) by Govt. of India.
+
+\end{tabular}
+%Section: Work Experience at the top
+\section{Work Experience}
+\centering
+\begin{tabular}{r|p{11cm}}
+\textsc{May-Jul 2016} & \large \textsc{Research Intern} at \textsc{Texas A\&M University, USA}\\
+& \textit{Dr. Srinivas Shakkottai, Associate Professor, ECE Department}\\
+& \tabitem Worked on analyzing the privacy of the user in DSRC enabled cars, which allows vehicle to vehicle/infrastructure communication.\\
+& \tabitem Broke down 229 GB \textsc{BSM dataset} from Ann Arbor, Michigan in 6 hours by processing on 20 cores of IBM's Ada Cluster, reducing from expected computation time of 4 days.\\
+& \tabitem Successfully demonstrated the lack of privacy in Random ID Switching protocol by reconstructing car routes with 98.37\% accuracy.
+More sophisticated protocols based upon driving behaviour under test.\\
+\multicolumn{2}{c}{}\\
+\textsc{May-Jul 2015} & \large \textsc{Android Application Development Intern}\\
+& \textit{Hughes Systique, Gurgaon, India}\\
+& \tabitem Worked on \textsc{GoSuraksheit}, an android based application for women safety. Integrated the new \textsc{Facebook API} for quick status updates containing custom message and user location in case of emergency.
+\end{tabular}
+
+% Section: Projects
+\section{Projects}
+\centering
+\begin{longtable}{r|p{11cm}}
+\textsc{Sep-Nov 2016} & \large \textsc{Video Summarization}\\
+& \textit{Course Project for Machine Learning under Dr. Piyush Rai } | \href{http://github.com/architsharma97/VideoSummarization/}{Github Repo}\\
+& \tabitem Implemented VSUMM, a \textit{clustering based algorithm} using features extracted at frame level. Features tested upon included \textsc{color histograms} and \textsc{fc7 layer features} of \textsc{VGG16} architecture.\\
+& \tabitem Implemented a \textit{deep learning model} using two opposite moving \textsc{LSTM} layers combined using a \textsc{1D convolution} layer.\\
+& \tabitem Implemented a custom version of VGRAPH and SIFT based algoritm.\\
+\multicolumn{2}{c}{}\\
+Dec 2015 & \large \textsc{Visual Question Answering using Deep Neural Nets}\\
+& \textit{under Dr. Vinay P. Namboodiri } | \href{https://github.com/architsharma97/VisualQA}{Github Repo}\\
+& \tabitem Implemented a \textit{deep learning model} for VQA Dataset. Used the \textsc{VGG16 Architecture} to extract visual features. \textsc{word2vec} was used to convert questions to into word vectors, which are fed into a LSTM network. The results are combined using a fully connected MLP, giving a softmax distribution over 1000 most frequent answers.\\
+\multicolumn{2}{c}{}\\
+\textsc{May 2016} & \large \textsc{Tagged Location Data Collection}\\
+& \textit{Android Application developed at Texas A\&M University | } \href{https://github.com/architsharma97/LocationTagger}{Github Repo}\\
+& \tabitem Minimalistic application to collect location data from users tagged with their mode of transport, developed from scratch.\\
+& \tabitem Pushes locally written files, containing location data, using FTP to remote server in a multi-threaded environment.
+\end{longtable}
+
+% Section: Courses
+\section{Coursework3}
+\centering
+\begin{tabular}{rl|rl}
+Machine Learning & A & Probability and Statistics & A*\\
+Fundamentals of Computing & A* & Data Structures and Algorithms & A\\
+Control Systems & A* & Introduction to Real Analysis & A\\
+Linear Algebra and ODE & A & Partial Differential Equations & A\\
+Principles of Communication & A & Digital Electronics & A\\
+Visual Recognition & \# & Digital Signal Processing & \#\\ \\
+
+\multicolumn{4}{l}{\footnotesize A* $\equiv$ Outstanding}\\
+\multicolumn{4}{l}{\footnotesize \# $\equiv$ Spring 2017}
+\end{tabular}
+
+% Section: Technical Skills
+\section{Technical Skills}
+\begin{tabular}{rp{11cm}}
+Proficient & C++, C, Python, \LaTeX\\
+Comfortable & JAVA, Shell (Bash), MATLAB\\
+Tools & Git, Keras, NumPy, Theano, Scikit-Learn, Matplotlib\\
+Operating Systems & Mac, Linux, Windows, Android
+\end{tabular}
+
+% Section: Miscellaneous
+\section{Miscellaneous}
+\begin{longtable}{p{13cm}}
+\large \textsc{Software Corner Manager, Techkriti'16}\\
+Handled logistics for software events in Techkriti, annual technical festival of IIT Kanpur. \textit{Managed a team of six} for conducting events and interacting with prospective participants. Conducted an onsite \textit{Appathon} with over 50 participants from colleges across India. Hosted \textit{Algorithmic Programming Contest IOPC} with over 400 teams registered across India.\\ \\
+\large \textsc{Competitive Programming}\\
+\href{https://www.codechef.com/users/architsh}{\textsc{Codechef Long Rating:}} 7737.06.\\
+Over 80 problems solved on \href{http://www.spoj.com/users/architsh/}{SPOJ}.\\
+Appearing in Amritaputi and Chennai regionals of ACM ICPC 2017.\\ \\
+\large \textsc{Student Guide, Counselling Service}\\
+\textit{Mentored seven freshmen} through their first year. Assisted in arranging a \textit{six day orientation} for incoming freshmen.\\ \\
+\large \textsc{Secretary, Programming Club}\\
+Organized lectures, workshops and contests for over 200 freshmen.
+\\ \\
+\large \textsc{Music}\\
+Performed in \textit{Musical extravaganza} and \textit{Fresher's Day} as lead guitarist for Music Club.\\
+Stood \textit{second} in eastern music competition in Galaxy'15, inter-hall event of IIT Kanpur.
+\end{longtable}
+\end{document}
