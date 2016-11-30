@@ -7,6 +7,7 @@
 \RequirePackage{color,graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage[big]{layaureo} 				%better formatting of the A4 page
+
 \usepackage{geometry}
 \geometry{
  a4paper,
@@ -16,10 +17,14 @@
  top=20mm,
  bottom=25mm,
 }
+\usepackage{enumitem}
+\setlist{leftmargin=4mm}
+
 % an alternative to Layaureo can be ** \usepackage{fullpage} **
 \usepackage{supertabular} 				%for Grades
 \usepackage{titlesec}					%custom \section
 \usepackage{longtable}
+\usepackage{tabularx}
 %Setup hyperref package, and colours for links
 \usepackage{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
@@ -115,37 +120,46 @@ Engineering.\\
 %Section: Work Experience at the top
 \section{Work Experience}
 \centering
-\begin{tabular}{r|p{11cm}}
+\begin{longtable}{r|p{12cm}}
 \textsc{May-Jul 2016} & \large \textsc{Research Intern} at \textsc{Texas A\&M University, USA}\\
-& \textit{Dr. Srinivas Shakkottai, Associate Professor, ECE Department}\\
-& \tabitem Worked on analyzing the privacy of the user in DSRC enabled cars, which allows vehicle to vehicle/infrastructure communication.\\
-& \tabitem Broke down 229 GB \textsc{BSM dataset} from Ann Arbor, Michigan in 6 hours by processing on 20 cores of IBM's Ada Cluster, reducing from expected computation time of 4 days.\\
-& \tabitem Successfully demonstrated the lack of privacy in Random ID Switching protocol by reconstructing car routes with 98.37\% accuracy.
-More sophisticated protocols based upon driving behaviour under test.\\
+& \textit{Dr. Srinivas Shakkottai, Associate Professor, ECE Department}
+\begin{itemize}
+ \item Worked on analyzing the privacy of the user in DSRC enabled cars, which allows vehicle to vehicle/infrastructure communication.
+ \item Broke down 229 GB \textsc{BSM dataset} from Ann Arbor, Michigan in 6 hours by processing on 20 cores of IBM's Ada Cluster, reducing from expected computation time of 4 days.
+ \item Successfully demonstrated the lack of privacy in Random ID Switching protocol by reconstructing car routes with 98.37\% accuracy. More sophisticated protocols based upon driving behaviour under test. \vspace*{-\baselineskip}
+\end{itemize}
+\\
 \multicolumn{2}{c}{}\\
 \textsc{May-Jul 2015} & \large \textsc{Android Application Development Intern}\\
-& \textit{Hughes Systique, Gurgaon, India}\\
-& \tabitem Worked on \textsc{GoSuraksheit}, an android based application for women safety. Integrated the new \textsc{Facebook API} for quick status updates containing custom message and user location in case of emergency.
-\end{tabular}
-
+& \textit{Hughes Systique, Gurgaon, India}
+\begin{itemize}
+ \item Worked on \textsc{GoSuraksheit}, an android based application for women safety. Integrated the new \textsc{Facebook API} for quick status updates containing custom message and user location in case of emergency. \vspace*{-\baselineskip}
+\end{itemize}\\
+\end{longtable}
 % Section: Projects
 \section{Projects}
 \centering
-\begin{longtable}{r|p{11cm}}
+\begin{longtable}{r|p{12cm}}
 \textsc{Sep-Nov 2016} & \large \textsc{Video Summarization}\\
-& \textit{Course Project for Machine Learning under Dr. Piyush Rai } | \href{http://github.com/architsharma97/VideoSummarization/}{Github Repo}\\
-& \tabitem Implemented VSUMM, a \textit{clustering based algorithm} using features extracted at frame level. Features tested upon included \textsc{color histograms} and \textsc{fc7 layer features} of \textsc{VGG16} architecture.\\
-& \tabitem Implemented a \textit{deep learning model} using two opposite moving \textsc{LSTM} layers combined using a \textsc{1D convolution} layer.\\
-& \tabitem Implemented a custom version of VGRAPH and SIFT based algoritm.\\
+& \textit{Course Project for Machine Learning under Dr. Piyush Rai } | \href{http://github.com/architsharma97/VideoSummarization/}{Github Repo}
+\begin{itemize}
+\item Implemented VSUMM, a \textit{clustering based algorithm} using features extracted at frame level. Features tested upon included \textsc{color histograms} and \textsc{fc7 layer features} of \textsc{VGG16} architecture.
+\item Implemented a \textit{deep learning model} using two opposite moving \textsc{LSTM} layers combined using a \textsc{1D convolution} layer.
+\item Implemented a custom version of VGRAPH and SIFT based algorithm.\vspace*{-\baselineskip}
+\end{itemize}\\
 \multicolumn{2}{c}{}\\
 Dec 2015 & \large \textsc{Visual Question Answering using Deep Neural Nets}\\
-& \textit{under Dr. Vinay P. Namboodiri } | \href{https://github.com/architsharma97/VisualQA}{Github Repo}\\
-& \tabitem Implemented a \textit{deep learning model} for VQA Dataset. Used the \textsc{VGG16 Architecture} to extract visual features. \textsc{word2vec} was used to convert questions to into word vectors, which are fed into a LSTM network. The results are combined using a fully connected MLP, giving a softmax distribution over 1000 most frequent answers.\\
+& \textit{under Dr. Vinay P. Namboodiri } | \href{https://github.com/architsharma97/VisualQA}{Github Repo}
+\begin{itemize}
+\item Implemented a \textit{deep learning model} for VQA Dataset. Used the \textsc{VGG16 Architecture} to extract visual features. \textsc{word2vec} was used to convert questions to into word vectors, which are fed into a LSTM network. The results are combined using a fully connected MLP, giving a softmax distribution over 1000 most frequent answers.\vspace*{-\baselineskip}
+\end{itemize}\\
 \multicolumn{2}{c}{}\\
 \textsc{May 2016} & \large \textsc{Tagged Location Data Collection}\\
-& \textit{Android Application developed at Texas A\&M University | } \href{https://github.com/architsharma97/LocationTagger}{Github Repo}\\
-& \tabitem Minimalistic application to collect location data from users tagged with their mode of transport, developed from scratch.\\
-& \tabitem Pushes locally written files, containing location data, using FTP to remote server in a multi-threaded environment.
+& \textit{Android Application developed at Texas A\&M University | } \href{https://github.com/architsharma97/LocationTagger}{Github Repo}
+\begin{itemize}
+\item Minimalistic application to collect location data from users tagged with their mode of transport, developed from scratch.
+\item Pushes locally written files, containing location data, using FTP to remote server in a multi-threaded environment.\vspace*{-\baselineskip}
+\end{itemize}\\
 \end{longtable}
 
 % Section: Courses
@@ -180,7 +194,7 @@ Handled logistics for software events in Techkriti, annual technical festival of
 \large \textsc{Competitive Programming}\\
 \href{https://www.codechef.com/users/architsh}{\textsc{Codechef Long Rating:}} 7737.06.\\
 Over 80 problems solved on \href{http://www.spoj.com/users/architsh/}{SPOJ}.\\
-Appearing in Amritaputi and Chennai regionals of ACM ICPC 2017.\\ \\
+Appearing in Amritapuri and Chennai regionals of ACM ICPC 2017.\\ \\
 \large \textsc{Student Guide, Counselling Service}\\
 \textit{Mentored seven freshmen} through their first year. Assisted in arranging a \textit{six day orientation} for incoming freshmen.\\ \\
 \large \textsc{Secretary, Programming Club}\\
