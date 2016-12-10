@@ -2,13 +2,14 @@
 
 %A Few Useful Packages
 \usepackage{marvosym}
-\usepackage{fontspec} 					%for loading fonts
+\usepackage{fontspec} %for loading fonts
 \usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
 \RequirePackage{color,graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage[big]{layaureo} 				%better formatting of the A4 page
-
+\usepackage[misc]{ifsym}
 \usepackage{geometry}
+\usepackage{fontawesome}
 \geometry{
  a4paper,
  total={210mm,297mm},
@@ -80,13 +81,13 @@ ItalicFont = Fontin-Italic.otf
 
 \pagestyle{empty} % non-numbered pages
 
-\font\fb=''[cmr10]'' %for use with \LaTeX command
+% \font\fb=''[cmr10]'' %for use with \LaTeX command
 
 %--------------------TITLE-------------
 \par{\centering
 		{\hspace{-2mm}\Huge \textsc{Archit Sharma}
-	}\\\large \textsc{Junior Undergraduate, IIT Kanpur}\\\normalsize \hspace{-4mm}\href{mailto:architsh@iitk.ac.in}{architsh@iitk.ac.in} | \href{https://github.com/architsharma97/}{Github} \bigskip\par}
-
+	}\\\large \textsc{Junior Undergraduate, IIT Kanpur}\\\normalsize \Letter\hspace{1mm}\href{mailto:architsh@iitk.ac.in}{architsh@iitk.ac.in} | \Mundus\hspace{1mm}\href{https://architsharma97.github.io/}{ architsharma97.github.io} | \faGithub \hspace{0mm} \href{https://github.com/architsharma97/}{architsharma97} \bigskip\par}
+	
 %--------------------SECTIONS-----------------------------------
 %Section: Education
 \section{Education}
@@ -161,7 +162,6 @@ Dec 2015 & \large \textsc{Visual Question Answering using Deep Neural Nets}\\
 \item Pushes locally written files, containing location data, using FTP to remote server in a multi-threaded environment.\vspace*{-\baselineskip}
 \end{itemize}\\
 \end{longtable}
-
 % Section: Courses
 \section{Coursework}
 \centering
@@ -202,6 +202,6 @@ Organized lectures, workshops and contests for over 200 freshmen.
 \\ \\
 \large \textsc{Music}\\
 Performed in \textit{Musical extravaganza} and \textit{Fresher's Day} as lead guitarist for Music Club.\\
-Stood \textit{second} in eastern music competition in Galaxy'15, inter-hall event of IIT Kanpur.
+Stood \textit{second} in eastern music competition in Galaxy'15, cultural event of IIT Kanpur.
 \end{longtable}
 \end{document}
