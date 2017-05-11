@@ -13,10 +13,10 @@
 \geometry{
  a4paper,
  total={210mm,297mm},
- left=30mm,
- right=30mm,
- top=20mm,
- bottom=25mm,
+ left=15mm,
+ right=15mm,
+ top=10mm,
+ bottom=10mm,
 }
 \usepackage{enumitem}
 \setlist{leftmargin=4mm}
@@ -86,51 +86,55 @@ ItalicFont = Fontin-Italic.otf
 %--------------------TITLE-------------
 \par{\centering
 		{\hspace{-2mm}\Huge \textsc{Archit Sharma}
-	}\\\large \textsc{Junior Undergraduate, IIT Kanpur}\\\normalsize \Letter\hspace{1mm}\href{mailto:architsh@iitk.ac.in}{architsh@iitk.ac.in} | \Mundus\hspace{1mm}\href{https://architsharma97.github.io/}{ architsharma97.github.io} | \faGithub \hspace{0mm} \href{https://github.com/architsharma97/}{architsharma97} \bigskip\par}
+	}\\\large \textsc{Junior Undergraduate, IIT Kanpur}\\\normalsize \Letter\hspace{1mm}\href{mailto:architsh@iitk.ac.in}{architsh@iitk.ac.in} | \Mundus\hspace{1mm}\href{https://architsharma97.github.io/}{ architsharma97.github.io} | \faGithub \hspace{0mm} \href{https://github.com/architsharma97/}{architsharma97} \par}
 	
 %--------------------SECTIONS-----------------------------------
 %Section: Education
 \section{Education}
-\begin{tabular}{rl}	
-\textsc{2018} & \large Bachelor of Technology, \textsc{IIT Kanpur}\\
-Expected & {Major}: \textit{Electrical Engineering} \\
-         & {Minor}: \textit{Computer Science (Artificial Intelligence)}\\ 
+\begin{tabular}{rl|rl}	
+\textsc{2018} & \large Bachelor of Technology, \textsc{IIT Kanpur} & \textsc{2014} & \large DAV Public School, Amritsar \\
+Expected & {Major}: \textit{Electrical Engineering} & & AISSCE, XII Board: 95/100\\
+         & {Minor}: \textit{Computer Science (Artificial Intelligence)}& & AISSE, X Board: 10/10\\ 
          & {CPI}: \textsc{9.8/10} \\
          & \\
-\textsc{2014} & \large DAV Public School, Amritsar\\
-              & AISSCE, XII Board: 95/100\\
-              & AISSE, X Board: 10/10\\
+% \textsc{2014} & \large DAV Public School, Amritsar\\
+%               & AISSCE, XII Board: 95/100\\
+%               & AISSE, X Board: 10/10\\
 \end{tabular}
 %Section: Achievements
 \section{Achievements}
 \begin{tabular}{rl}
-% 2016 & \textsc{Departmental Rank 1} out of 140 undergraduates in Electrical
-% Engineering.\\
+2017 & \textsc{Departmental Rank 3} out of 140 undergraduates in Electrical
+Engineering.\\
+2017 & Awarded \textsc{Sri Singhasan Singh Scholarship} for highest CPI in Electrical Engineering, IIT Kanpur.\\
+2017 & Awarded $A^*$ for exceptional performance in six courses.\\
+2017 & Shortlisted for the  prestigious \textsc{Rhodes Scholarship} by IIT Kanpur.\\
+2017 & Selected for the MITACS Globalink Research Internship. \\
+2016 & Awarded \textsc{Academic Excellence Award} by IIT Kanpur for the academic year 2015-16.\\
 2016 & Secured 63 rank in online round for \textsc{ACM ICPC India Regionals}.\\
-2016 & Selected for \textsc{Texas A\&M-IITK Summer Research Internship Program}.\\ 
-& Only student to achieve so in \textsc{sophomore} year.\\
-2016 & Awarded $A^*$ for exceptional performance in six courses.\\
-2015 & Awarded \textsc{Academic Excellence Award} by IIT Kanpur.\\
-2014 & Secured 376 rank in \textsc{JEE Advanced} among 150,000 students.\\
-2014 & Secured 730 rank in \textsc{JEE Mains} among 1.2 million students. \\
-2012 & Secured \textsc{first position} in IX-X category in \textsc{NASA Ames Space Settlement Design}\\
-&\textsc{Contest} among submissions from over 14 countries.\\
+2016 & Selected for \textsc{Texas A\&M-IITK Summer Research Internship Program}, only \textsc{sophomore} to accomplish this.\\
+2015 & Awarded \textsc{Academic Excellence Award} by IIT Kanpur for the academic year 2014-15.\\
+2014 & Secured \textsc{All India Rank 376} in \textsc{JEE Advanced} among 150,000 students.\\
+% 2014 & Secured 730 rank in \textsc{JEE Mains} among 1.2 million students. \\
+2012 & Secured \textsc{first position} in IX-X category in \textsc{NASA Ames Space Settlement Design Contest} worldwide.\\
 2010 & Awarded \textsc{National Talent Search Scholarship} (NTSE) by Govt. of India.
 
 \end{tabular}
-%Section: Work Experience at the top
+%Section: Work Experience
 \section{Work Experience}
 \centering
-\begin{longtable}{r|p{12cm}}
+\begin{longtable}{r|p{16cm}}
+% Texas A&M
 \textsc{May-Jul 2016} & \large \textsc{Research Intern} at \textsc{Texas A\&M University, USA}\\
 & \textit{Dr. Srinivas Shakkottai, Associate Professor, ECE Department}
 \begin{itemize}
  \item Worked on analyzing the privacy of the user in DSRC enabled cars, which allows vehicle to vehicle/infrastructure communication.
  \item Broke down 229 GB \textsc{BSM dataset} from Ann Arbor, Michigan in 6 hours by processing on 20 cores of IBM's Ada Cluster, reducing from expected computation time of 4 days.
- \item Successfully demonstrated the lack of privacy in Random ID Switching protocol by reconstructing car routes with 98.37\% accuracy. More sophisticated protocols based upon driving behaviour under test. \vspace*{-\baselineskip}
+ \item Successfully demonstrated the lack of privacy in Random ID Switching protocol by reconstructing car routes with 98.37\% accuracy. Driving behaviour based protocols under test. \vspace*{-\baselineskip}
 \end{itemize}
 \\
 \multicolumn{2}{c}{}\\
+% Hughes Systique
 \textsc{May-Jul 2015} & \large \textsc{Android Application Development Intern}\\
 & \textit{Hughes Systique, Gurgaon, India}
 \begin{itemize}
@@ -140,63 +144,84 @@ Expected & {Major}: \textit{Electrical Engineering} \\
 % Section: Projects
 \section{Projects}
 \centering
-\begin{longtable}{r|p{12cm}}
-\textsc{Sep-Nov 2016} & \large \textsc{Video Summarization}\\
-& \textit{Course Project for Machine Learning under Dr. Piyush Rai } | \href{http://github.com/architsharma97/VideoSummarization/}{Github Repo}
+\begin{longtable}{r|p{15cm}}
+% Visual Dialog
+\textsc{Jan-Apr 2017} & \large \textsc{Visual Dialog}\\
+& \textit{Undergraduate Project under Dr. Vinay P. Namboodiri } | \href{https://github.com/architsharma97/VisualDialog}{Github}
 \begin{itemize}
-\item Implemented VSUMM, a \textit{clustering based algorithm} using features extracted at frame level. Features tested upon included \textsc{color histograms} and \textsc{fc7 layer features} of \textsc{VGG16} architecture.
+\item Implemented encoder-decoder framework based deep learning models for \href{https://visualdialog.org/}{\textsc{visual dialog}}, with the aim to answer sequence of questions based on an image.
+\item Created a memory network based encoder for the input image, questions and the past conversation. The embeddings are fed into deep LSTM based decoder to generate the answers.
+\item Also implemented a late fusion encoder. The performance for both the encoders was comparable to those reported in the original paper.\vspace*{-\baselineskip}
+\end{itemize}\\
+\multicolumn{2}{c}{}\\
+% Dehazing GANs
+\textsc{Mar-Apr 2017} & \large \textsc{GANs for Single Image Dehazing}\\
+& \textit{Course Project for Visual Recognition under Dr. Vinay P. Namboodiri}
+\begin{itemize}
+\item Following the implementation of pix2pix for image-to-image translation, designed a GAN based architecture for image dehazing. This was the first work to try dehazing images in a GAN based setup. Tested the effect of reweigthing L1 and Adversarial loss. Stacking of generators was also explored as a part of this project.
+\item Visually appealing results were obtained for 256x256 images, which were comparable to state-of-the-art techniques for dehazing images.\vspace*{-\baselineskip}
+\end{itemize}\\
+\multicolumn{2}{c}{}\\
+% Video Summarization
+\textsc{Sep-Nov 2016} & \large \textsc{Video Summarization}\\
+& \textit{Course Project for Machine Learning under Dr. Piyush Rai } | \href{http://github.com/architsharma97/VideoSummarization/}{Github}
+\begin{itemize}
+\item Implemented VSUMM, a \textit{clustering based algorithm} using features extracted at frame level. Features tested upon include \textsc{color histograms} and \textsc{fc7 layer features} of \textsc{VGG16} architecture.
 \item Implemented a \textit{deep learning model} using two opposite moving \textsc{LSTM} layers combined using a \textsc{1D convolution} layer.
 \item Implemented a custom version of VGRAPH and SIFT based algorithm.\vspace*{-\baselineskip}
 \end{itemize}\\
 \multicolumn{2}{c}{}\\
+% Visual Question Answering
 Dec 2015 & \large \textsc{Visual Question Answering using Deep Neural Nets}\\
-& \textit{under Dr. Vinay P. Namboodiri } | \href{https://github.com/architsharma97/VisualQA}{Github Repo}
+& \textit{under Dr. Vinay P. Namboodiri } | \href{https://github.com/architsharma97/VisualQA}{Github}
 \begin{itemize}
 \item Implemented a \textit{deep learning model} for VQA Dataset. Used the \textsc{VGG16 Architecture} to extract visual features. \textsc{word2vec} was used to convert questions to into word vectors, which are fed into a LSTM network. The results are combined using a fully connected MLP, giving a softmax distribution over 1000 most frequent answers.\vspace*{-\baselineskip}
 \end{itemize}\\
 \multicolumn{2}{c}{}\\
+% Tagged Location Data Collection
 \textsc{May 2016} & \large \textsc{Tagged Location Data Collection}\\
-& \textit{Android Application developed at Texas A\&M University | } \href{https://github.com/architsharma97/LocationTagger}{Github Repo}
+& \textit{Android Application developed at Texas A\&M University | } \href{https://github.com/architsharma97/LocationTagger}{Github}
 \begin{itemize}
 \item Minimalistic application to collect location data from users tagged with their mode of transport, developed from scratch.
 \item Pushes locally written files, containing location data, using FTP to remote server in a multi-threaded environment.\vspace*{-\baselineskip}
 \end{itemize}\\
 \end{longtable}
+
 % Section: Courses
 \section{Coursework}
 \centering
-\begin{tabular}{rl|rl}
-Machine Learning & A & Probability and Statistics & A*\\
-Fundamentals of Computing & A* & Data Structures and Algorithms & A\\
-Control Systems & A* & Introduction to Real Analysis & A\\
-Linear Algebra and ODE & A & Partial Differential Equations & A\\
-Principles of Communication & A & Digital Electronics & A\\
-Visual Recognition & \# & Digital Signal Processing & \#\\ \\
+\begin{tabular}{rl|rl|rl}
+Visual Recognition & A & Machine Learning & A & Probabilistic Machine Learning & \#\\
+Fundamentals of Computing & A* & Data Structures and Algorithms & A & Image Processing & \#\\
+Digital Signal Processing & A & Probability and Statistics & A* & Algorithms-II & \#\\
+Introduction to Real Analysis & A & Partial Differential Equations & A\\
+Linear Algebra and ODE & A & Digital Electronics & A\\
+Priniciples of Communication & A & Control Systems & A*\\ \\
 
 \multicolumn{4}{l}{\footnotesize A* $\equiv$ Outstanding}\\
-\multicolumn{4}{l}{\footnotesize \# $\equiv$ Spring 2017}
+\multicolumn{4}{l}{\footnotesize \# $\equiv$ Fall 2017}
 \end{tabular}
 
 % Section: Technical Skills
 \section{Technical Skills}
-\begin{tabular}{rp{11cm}}
+\begin{tabular}{rp{15cm}}
 Proficient & C++, C, Python, \LaTeX\\
 Comfortable & JAVA, Shell (Bash), MATLAB\\
-Tools & Git, Keras, NumPy, Theano, Scikit-Learn, Matplotlib\\
+Tools & Theano, Git, Keras, NumPy, Scikit-Learn, Matplotlib\\
 Operating Systems & Mac, Linux, Windows, Android
 \end{tabular}
 
 % Section: Miscellaneous
 \section{Miscellaneous}
-\begin{longtable}{p{13cm}}
+\begin{longtable}{p{17cm}}
 \large \textsc{Software Corner Manager, Techkriti'16}\\
 Handled logistics for software events in Techkriti, annual technical festival of IIT Kanpur. \textit{Managed a team of six} for conducting events and interacting with prospective participants. Conducted an onsite \textit{Appathon} with over 50 participants from colleges across India. Hosted the \textit{Algorithmic Programming Contest IOPC} with over 400 teams registered across India.\\ \\
 \large \textsc{Competitive Programming}\\
-\href{https://www.codechef.com/users/architsh}{\textsc{Codechef Long Rating:}} 8190.89.\\
-Over 80 problems solved on \href{http://www.spoj.com/users/architsh/}{SPOJ}.\\
-Appearing in Amritapuri and Chennai regionals of ACM ICPC 2017.\\ \\
+\href{https://www.codechef.com/users/architsh}{\textsc{Codechef Long Challenge Rating:}} 8190.89. Over 80 problems solved on \href{http://www.spoj.com/users/architsh/}{SPOJ}.\\
+Appeared in Amritapuri and Chennai regionals of ACM ICPC 2017.\\ 
+Appeared in Round 2 of Facebook Hackercup, 2017.\\ \\
 \large \textsc{Student Guide, Counselling Service}\\
-\textit{Mentored seven freshmen} through their first year. Assisted in arranging a \textit{six day orientation} for incoming freshmen.\\ \\
+\textit{Mentored} seven freshmen for their first year. Assisted in arranging a \textit{six day orientation} for incoming freshmen.\\ \\
 \large \textsc{Secretary, Programming Club}\\
 Organized lectures, workshops and contests for over 200 freshmen.
 \\ \\
