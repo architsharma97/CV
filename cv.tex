@@ -91,125 +91,149 @@ ItalicFont = Fontin-Italic.otf
 %--------------------SECTIONS-----------------------------------
 %Section: Education
 \section{Education}
-\begin{tabular}{rlrl}	
-\textsc{2018} & \large Bachelor of Technology, \textsc{IIT Kanpur} & \textsc{2014} & \large DAV Public School, Amritsar \\
-Expected & {Major}: \textit{Electrical Engineering} & & AISSCE, XII Board: 95/100\\
-         & {Minor}: \textit{Artificial Intelligence and Linguistic Theory}& & AISSE, X Board: 10/10\\ 
+\begin{tabular}{rl}	
+\textsc{2018} & \large \textsc{Bachelor of Technology}, \textbf{Indian Institute of Technology, Kanpur}\\
+(Expected) & \textit{Major}: \textsc{Electrical Engineering} \\
+         & \textit{Minor}: \textsc{Artificial Intelligence, Linguistic Theory}\\
          & {CPI}: \textsc{9.8/10} \\
-         & \\
+        %  & \\
 % \textsc{2014} & \large DAV Public School, Amritsar\\
 %               & AISSCE, XII Board: 95/100\\
 %               & AISSE, X Board: 10/10\\
 \end{tabular}
-%Section: Achievements
-\section{Achievements}
-\begin{tabular}{rl}
-2017 & \textsc{Departmental Rank 2} out of 140 undergraduates in Electrical
-Engineering, IIT Kanpur.\\
-2017 & Awarded \textsc{Sri Singhasan Singh Scholarship} for highest CPI in Electrical Engineering, IIT Kanpur.\\
-2017 & Awarded $A^*$ for exceptional performance in seven courses.\\
-2017 & Shortlisted for the  prestigious \textsc{Rhodes Scholarship} by IIT Kanpur.\\
-2017 & Selected for the MITACS Globalink Research Internship. \\
-2016 & Awarded \textsc{Academic Excellence Award} by IIT Kanpur for the academic year 2015-16.\\
-2016 & Secured 63 rank in online round for \textsc{ACM ICPC India Regionals}.\\
-2016 & Selected for \textsc{Texas A\&M-IITK Summer Research Internship Program}, only \textsc{sophomore} to accomplish this.\\
-2015 & Awarded \textsc{Academic Excellence Award} by IIT Kanpur for the academic year 2014-15.\\
-2014 & Secured \textsc{All India Rank 376} in \textsc{JEE Advanced} among 150,000 students.\\
-% 2014 & Secured 730 rank in \textsc{JEE Mains} among 1.2 million students. \\
-2012 & Secured \textsc{first position} in IX-X category in \textsc{NASA Ames Space Settlement Design Contest} worldwide.\\
-2010 & Awarded \textsc{National Talent Search Scholarship} (NTSE) by Govt. of India.
 
-\end{tabular}
-%Section: Work Experience
-\section{Work Experience}
+%Section: Research Experience
+\section{Research Experience}
 \centering
 \begin{longtable}{r|p{15cm}}
 % MILA
-\textsc{May-Aug 2017} & \large \textsc{Research Intern} at \textsc{Montreal Institute of Learning Algorithms (MILA)}\\
-& \textit{Dr. Yoshua Bengio, Professor, University of Montreal} | \href{https://github.com/architsharma97/MNIST}{Github}
+\textsc{May-Aug 2017} & \large \textsc{Synthetic Gradients across Discrete Latent Variables}\\
+\faGithub \hspace{1mm}\href{https://github.com/architsharma97/MNIST}{github} & \textit{Research Intern at Montreal Institute of Learning Algorithms (MILA)}\\
+\faFilePdfO \hspace{1mm} \href{https://docs.google.com/document/d/1eU1pLuHCfEBsj3-awdN1GR82oTQ15DK5jLm7ls4jlDM/edit#heading=h.rqi67q82now6}{summary} & \textit{Supervisor}: \textsc{Dr. Yoshua Bengio}
+
 \begin{itemize}
-\item Investigated and evaluated performance of different gradient estimators (REINFORCE/Policy Gradients, Straight Through and Gumbel-Softmax) for computational graphs with discrete latent variables in a half and half MNIST generation problem.
-\item Based on the idea of \textsc{synthetic gradients}, evaluated the benefits and limitations of a novel gradient estimator for discrete latent variables, with potential use in reinforcement learning and GANs for discrete data (such as language modelling) among others. 
+\item Proposed a \textbf{novel estimator for gradients across discrete latent variables}, with potential use in Reinforcement Learning and GAN training (for structured data like language).
+\item Formulated a synthetic gradient like auxiliary learner, with REINFORCE as the training signal, to produce \textbf{low-variance gradients} across discrete latent variables.
+\item Compared the performance with other gradient estimators (REINFORCE, Straight Through and Gumbel-Softmax). The proposed estimator provided \textbf{faster but poorer convergence} compared to REINFORCE, possibly, because of the \textbf{non-stationary input} or the \textbf{mismatch between objectives of the auxiliary learner and the main network}.
 \vspace*{-\baselineskip}
 \end{itemize}
 \\
+
+\multicolumn{2}{c}{}\\
+% Mixture of Bayesian SVMs
+\textsc{Ongoing} & \large \textsc{Mixture of Bayesian SVM Experts}\\
+\faFilePdfO \hspace{1mm}\href{https://architsharma97.github.io/resources/mbs.pdf}{presentation} & \textit{Undergraduate Project at IIT Kanpur}\\
+\faFilePdfO \hspace{1mm}\href{https://architsharma97.github.io/resources/mbs_report.pdf}{report} & \textit{Supervisor}: \textsc{Dr. Piyush Rai}
+\begin{itemize}
+ \item  Formulated a \textbf{novel and interpretable classification model} with Bayesian SVM as \textit{experts} in a Mixture of Experts setting.
+ \item Introduced a novel \textbf{polya-gamma augmented softmax gating network} and derived an EM based algorithm for training the model.
+ \item The model \textbf{achieves competitive results on various binary classification} datasets. Currently, other variants and extensions (Multiclass classification, Online EM) are being formulated.\vspace*{-\baselineskip}
+\end{itemize}\\
+
 \multicolumn{2}{c}{}\\
 % Texas A&M
-\textsc{May-Jul 2016} & \large \textsc{Research Intern} at \textsc{Texas A\&M University, USA}\\
-& \textit{Dr. Srinivas Shakkottai, Associate Professor, ECE Department}
+\textsc{May-Jul 2016} & \large Privacy Analysis of DSRC enabled Cars\\
+& \textit{Research Intern at Texas A\&M University}\\
+& \textit{Supervisor}: \textsc{Dr. Srinivas Shakkottai}
 \begin{itemize}
- \item Worked on analyzing privacy of the user in DSRC enabled cars, which allows vehicle to vehicle/infrastructure communication.
- \item Broke down 229 GB \textsc{BSM dataset} from Ann Arbor, Michigan in 6 hours by processing on 20 cores of IBM's Ada Cluster, reducing from expected computation time of 4 days.
- \item Successfully demonstrated the lack of privacy in Random ID Switching protocol by reconstructing car routes with 98.37\% accuracy. Other driving behaviour based protocols under test. \vspace*{-\baselineskip}
-\end{itemize}
-\\
-\multicolumn{2}{c}{}\\
-% Hughes Systique
-\textsc{May-Jul 2015} & \large \textsc{Android Application Development Intern}\\
-& \textit{Hughes Systique, Gurgaon, India}
-\begin{itemize}
- \item Worked on \textsc{GoSuraksheit}, an android based application for women safety. Integrated the new \textsc{Facebook API} for quick status updates containing custom message and user location in case of emergency. \vspace*{-\baselineskip}
+ \item Analyzed user privacy in DSRC enabled cars (vehicle to vehicle/infrastructure communication).
+%  \item Broke down 229 GB \textsc{BSM dataset} from Ann Arbor, Michigan in 6 hours by processing on 20 cores of IBM's Ada Cluster, reducing from expected computation time of 4 days.
+ \item Successfully \textbf{demonstrated the lack of privacy in Random ID Switching protocol} by reconstructing car routes with 98.37\% accuracy. \vspace*{-\baselineskip}
 \end{itemize}\\
 \end{longtable}
-% Section: Projects
-\section{Projects}
+
+% Section: Selected Projects
+\section{Selected Projects}
 \centering
 \begin{longtable}{r|p{15cm}}
+\textsc{Ongoing} & \large \textsc{Improved Variational Inference using Real NVP}\\
+\faFilePdfO \hspace{1mm} \href{https://architsharma97.github.io/resources/improvedvi.pdf}{report} & \textit{Course Project for Probabilistic Machine Learning under Dr. Piyush Rai}
+\begin{itemize}
+\item Proposed \textbf{Real NVP} as an alternate to Normalizing Flows in a VAE setup for generative modelling of images.
+\item Compared Real NVP and Normalizing Flows on \textbf{Binarized MNIST, with promising initial results for the former}.
+\item Further analysis with higher number of transformations, and on different datasets planned. \vspace*{-\baselineskip}
+\end{itemize}\\
+\multicolumn{2}{c}{}\\
 % Visual Dialog
 \textsc{Jan-Apr 2017} & \large \textsc{Visual Dialog}\\
-& \textit{Undergraduate Project under Dr. Vinay P. Namboodiri } | \href{https://github.com/architsharma97/VisualDialog}{Github}
+\faGithub \hspace{1mm}\href{https://github.com/architsharma97/VisualDialog}{github} & \textit{Undergraduate Project under Dr. Vinay P. Namboodiri}
 \begin{itemize}
-\item Implemented encoder-decoder framework based deep learning models for \href{https://visualdialog.org/}{\textsc{visual dialog}}, with the aim to answer sequence of questions based on an image.
-\item Created a memory network based encoder for the input image, questions and the past conversation. The embeddings are fed into deep LSTM based decoder to generate the answers.
-\item Also implemented a late fusion encoder. The performance for both the encoders was comparable to those reported in the original paper.\vspace*{-\baselineskip}
+\item Implemented \textbf{encoder-decoder framework} based deep learning models for \href{https://visualdialog.org/}{\textsc{visual dialog}}, with the aim to answer sequence of questions based on an image.
+\item Created a \textbf{memory network based encoder} for the input image, questions and the past conversation. The embeddings are fed into \textbf{deep LSTM based decoder} to generate the answers.\vspace*{-\baselineskip}
+% \item Also implemented a late fusion encoder. The performance for both the encoders was comparable to those reported in the original paper.
 \end{itemize}\\
 \multicolumn{2}{c}{}\\
 % Dehazing GANs
 \textsc{Mar-Apr 2017} & \large \textsc{GANs for Single Image Dehazing}\\
-& \textit{Course Project for Visual Recognition under Dr. Vinay P. Namboodiri}
+\faFilePdfO \hspace{1mm} \href{https://architsharma97.github.io/resources/dehazing_gans_poster.pdf}{poster} & \textit{Course Project for Visual Recognition under Dr. Vinay P. Namboodiri}
 \begin{itemize}
-\item Following the implementation of pix2pix for image-to-image translation, designed a GAN based architecture for image dehazing. This was the first work to try dehazing images in a GAN based setup. Tested the effect of reweigthing L1 and Adversarial loss. Stacking of generators was also explored as a part of this project.
-\item Visually appealing results were obtained for 256x256 images, which were comparable to state-of-the-art techniques for dehazing images.\vspace*{-\baselineskip}
+\item Formulated a \textbf{deep architecture, along the lines of pix2pix, for single image-dehazing} using a weighted combination of GAN and L1 loss.\vspace*{-\baselineskip}
+% \item Following the implementation of pix2pix for image-to-image translation, designed a GAN based architecture for image dehazing. This was the first work to try dehazing images in a GAN based setup. Tested the effect of reweighting L1 and Adversarial loss. \item Visually appealing results were obtained for 256x256 images, which were comparable to state-of-the-art techniques for dehazing images.
 \end{itemize}\\
 \multicolumn{2}{c}{}\\
 % Video Summarization
 \textsc{Sep-Nov 2016} & \large \textsc{Video Summarization}\\
-& \textit{Course Project for Machine Learning under Dr. Piyush Rai } | \href{http://github.com/architsharma97/VideoSummarization/}{Github}
+\faGithub \hspace{1mm} \href{http://github.com/architsharma97/VideoSummarization/}{github} & \textit{Course Project for Machine Learning under Dr. Piyush Rai }
 \begin{itemize}
-\item Implemented VSUMM, a \textit{clustering based algorithm} using features extracted at frame level. Features tested upon include \textsc{color histograms} and \textsc{fc7 layer features} of \textsc{VGG16} architecture.
-\item Implemented a \textit{deep learning model} using two opposite moving \textsc{LSTM} layers combined using a \textsc{1D convolution} layer.
-\item Implemented a custom version of VGRAPH and SIFT based algorithm.\vspace*{-\baselineskip}
+\item Implemented and compared different video summarization techniques like VSUMM, VGRAPH on different features extracted at the frame level.\vspace*{-\baselineskip}
+% \item Implemented VSUMM, a \textit{clustering based algorithm} using features extracted at frame level. Features tested upon include \textsc{color histograms} and \textsc{fc7 layer features} of \textsc{VGG16} architecture.
+% \item Implemented a \textit{deep learning model} using two opposite moving \textsc{LSTM} layers combined using a \textsc{1D convolution} layer.
+% \item Implemented a custom version of VGRAPH and SIFT based algorithm.\vspace*{-\baselineskip}
 \end{itemize}\\
-\multicolumn{2}{c}{}\\
-% Visual Question Answering
-Dec 2015 & \large \textsc{Visual Question Answering using Deep Neural Nets}\\
-& \textit{under Dr. Vinay P. Namboodiri } | \href{https://github.com/architsharma97/VisualQA}{Github}
-\begin{itemize}
-\item Implemented a \textit{deep learning model} for VQA Dataset. Used the \textsc{VGG16 Architecture} to extract visual features. \textsc{word2vec} was used to convert questions to into word vectors, which are fed into a LSTM network. The results are combined using a fully connected MLP, giving a softmax distribution over 1000 most frequent answers.\vspace*{-\baselineskip}
-\end{itemize}\\
-\multicolumn{2}{c}{}\\
-% Tagged Location Data Collection
-\textsc{May 2016} & \large \textsc{Tagged Location Data Collection}\\
-& \textit{Android Application developed at Texas A\&M University | } \href{https://github.com/architsharma97/LocationTagger}{Github}
-\begin{itemize}
-\item Minimalistic application to collect location data from users tagged with their mode of transport, developed from scratch.
-\item Pushes locally written files, containing location data, using FTP to remote server in a multi-threaded environment.\vspace*{-\baselineskip}
-\end{itemize}\\
+% \multicolumn{2}{c}{}\\
+% % Visual Question Answering
+% Dec 2015 & \large \textsc{Visual Question Answering using Deep Neural Nets}\\
+% & \textit{under Dr. Vinay P. Namboodiri } | \href{https://github.com/architsharma97/VisualQA}{Github}
+% \begin{itemize}
+% \item Implemented a \textit{deep learning model} for VQA Dataset. Used the \textsc{VGG16 Architecture} to extract visual features. \textsc{word2vec} was used to convert questions to into word vectors, which are fed into a LSTM network. The results are combined using a fully connected MLP, giving a softmax distribution over 1000 most frequent answers.\vspace*{-\baselineskip}
+% \end{itemize}\\
+% \multicolumn{2}{c}{}\\
+% % Tagged Location Data Collection
+% \textsc{May 2016} & \large \textsc{Tagged Location Data Collection}\\
+% & \textit{Android Application developed at Texas A\&M University | } \href{https://github.com/architsharma97/LocationTagger}{Github}
+% \begin{itemize}
+% \item Minimalistic application to collect location data from users tagged with their mode of transport, developed from scratch.
+% \item Pushes locally written files, containing location data, using FTP to remote server in a multi-threaded environment.\vspace*{-\baselineskip}
+% \end{itemize}\\
+
+% \multicolumn{2}{c}{}\\
+% % Hughes Systique
+% \textsc{May-Jul 2015} & \large \textsc{Android Application Development Intern}\\
+% & \textit{Hughes Systique, Gurgaon, India}
+% \begin{itemize}
+%  \item Worked on \textsc{GoSuraksheit}, an android based application for women safety. Integrated the new \textsc{Facebook API} for quick status updates containing custom message and user location in case of emergency. \vspace*{-\baselineskip}
+% \end{itemize}\\
 \end{longtable}
 
+%Section: Achievements
+\section{Achievements}
+\begin{tabular}{rl}
+2017 & \textbf{Departmental Rank 2} out of 140 undergraduates in Electrical
+Engineering, IIT Kanpur.\\
+2017 & Awarded \textsc{Sri Singhasan Singh Scholarship} for \textbf{highest CPI} in Electrical Engineering, IIT Kanpur.\\
+2017 & Awarded $A^*$ for \textbf{exceptional performance in seven courses}.\\
+% 2017 & Shortlisted for the  prestigious \textsc{Rhodes Scholarship} by IIT Kanpur.\\
+% 2017 & Selected for the MITACS Globalink Research Internship. \\
+2016 & Awarded \textbf{Academic Excellence Award} by IIT Kanpur for \textsc{consecutive academic years 2014-16}.\\
+% 2016 & \textbf{Secured 63 rank} in online round for \textsc{ACM ICPC India Regionals}.\\
+2016 & Selected for \textbf{Texas A\&M-IITK Summer Research Internship Program}, only \textsc{sophomore} to accomplish this.\\
+2014 & Secured \textbf{All India Rank 376} in \textsc{JEE Advanced} among 150,000 students.\\
+% 2014 & Secured 730 rank in \textsc{JEE Mains} among 1.2 million students. \\
+% 2012 & Secured \textsc{first position} in IX-X category in \textsc{NASA Ames Space Settlement Design Contest} worldwide.\\
+2010 & Awarded \textbf{National Talent Search Scholarship} (NTSE) by Govt. of India.
+
+\end{tabular}
 % Section: Courses
-\section{Coursework}
+\section{Relevant Coursework}
 \centering
 \begin{tabular}{rl|rl|rl}
 Visual Recognition & A & Machine Learning & A & Probabilistic Machine Learning & \#\\
 Fundamentals of Computing & A* & Data Structures and Algorithms & A & Image Processing & \#\\
-Digital Signal Processing & A & Probability and Statistics & A* & Algorithms-II & \#\\
-Introduction to Real Analysis & A & Partial Differential Equations & A\\
-Linear Algebra and ODE & A & Digital Electronics & A\\
-Priniciples of Communication & A & Control Systems & A*\\ \\
+Digital Signal Processing & A & Probability and Statistics & A* & Convex Optimization & *\\
+Introduction to Real Analysis & A & Partial Differential Equations & A & Statistical Learning Theory & *\\
+Linear Algebra and ODE & A & Algorithms-II & \# & Natural Language Processing & *\\ \\
 
-\multicolumn{4}{l}{\footnotesize A* $\equiv$ Outstanding}\\
-\multicolumn{4}{l}{\footnotesize \# $\equiv$ Fall 2017}
+\multicolumn{4}{l}{\footnotesize A* $\equiv$ Outstanding, \# $\equiv$ Fall 2017, * $\equiv$ Spring 2018}\\
 \end{tabular}
 
 % Section: Technical Skills
@@ -217,26 +241,32 @@ Priniciples of Communication & A & Control Systems & A*\\ \\
 \begin{tabular}{rp{15cm}}
 Proficient & C++, C, Python, \LaTeX\\
 Comfortable & JAVA, Shell (Bash), MATLAB\\
-Tools & Theano, Git, Keras, NumPy, Scikit-Learn, Matplotlib\\
-Operating Systems & Mac, Linux, Windows, Android
+Tools & Tensorflow, Theano, Git, NumPy, Scikit-Learn
 \end{tabular}
 
 % Section: Miscellaneous
 \section{Miscellaneous}
 \begin{longtable}{p{16cm}}
-\large \textsc{Software Corner Manager, Techkriti'16}\\
-Handled logistics for software events in Techkriti, annual technical festival of IIT Kanpur. \textit{Managed a team of six} for conducting events and interacting with prospective participants. Conducted an onsite \textit{Appathon} with over 50 participants from colleges across India. Hosted the \textit{Algorithmic Programming Contest IOPC} with over 400 teams registered across India.\\ \\
+\large \textsc{Talks}\\
+Presented a \faFilePdfO  \hspace{1mm}\href{https://architsharma97.github.io/resources/mlrd_talk.pdf}{talk} on \textbf{Gradients for Discrete Latent Variables} on Machine Learning Research Day (MLRD) organized by SIGML, IIT Kanpur.\\ \\
 \large \textsc{Competitive Programming}\\
 \href{https://www.codechef.com/users/architsh}{\textsc{Codechef Long Challenge Rating:}} 8190.89. Over 80 problems solved on \href{http://www.spoj.com/users/architsh/}{SPOJ}.\\
-Appeared in Amritapuri and Chennai regionals of ACM ICPC 2017 and Round 2 of Facebook Hackercup 2017\\ \\
-\pagebreak
+Secured \textbf{63 rank} in online qualification round for \textbf{ACM ICPC Regionals 2017}, appearing thereafter in \textsc{Amritapuri and Chennai regionals}. Also, appeared in Round 2 of Facebook Hackercup 2017.\\ \\
+\large \textsc{Standardized Scores}\\
+\textbf{GRE}: 336/340, \textbf{TOEFL}: 115/120.\\ \\
+\large \textsc{Software Corner Manager, Techkriti'16}\\
+Handled logistics for software events in Techkriti, \textit{annual technical festival of IIT Kanpur}.\\ \\
+\large \textsc{Android Development}\\
+Integrated the Facebook API in \textit{GoSuraksheit}, a women safety application developed at \textsc{Hughes Systique}.\\
+Developed an android application to collect location and travel data at \textsc{Texas A\&M University}. \\ \\
+\large \textsc{NASA Ames Space Settlement Design Contest, 2012}\\
+\textbf{Awarded first position} in IX-X category amongst \textbf{participants from over 10 countries}for designing a space settlement capable of hosting nearly 10,000 humans independently.\\ \\
 \large \textsc{Student Guide, Counselling Service}\\
-\textit{Mentored} seven freshmen for their first year. Assisted in arranging a \textit{six day orientation} for incoming freshmen.\\ \\
+Mentored seven freshmen through their first year.\\ \\
 \large \textsc{Secretary, Programming Club}\\
 Organized lectures, workshops and contests for over 200 freshmen.
 \\ \\
 \large \textsc{Music}\\
-Performed in \textit{Musical extravaganza} and \textit{Fresher's Day} as lead guitarist for Music Club.\\
-Stood \textit{second} in eastern music competition in Galaxy'15, cultural event of IIT Kanpur.
+Avid guitarist. Participated in various competitions and events organized by Music Club, IIT Kanpur.
 \end{longtable}
 \end{document}
