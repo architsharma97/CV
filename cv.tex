@@ -34,7 +34,7 @@
 %FONTS
 \defaultfontfeatures{Mapping=tex-text}
 %\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
-%%% modified for Karol KozioÅ for ShareLaTeX use
+%%% modified for Karol KozioÃÂ for ShareLaTeX use
 \setmainfont[
 SmallCapsFont = Fontin-SmallCaps.otf,
 BoldFont = Fontin-Bold.otf,
@@ -86,16 +86,18 @@ ItalicFont = Fontin-Italic.otf
 %--------------------TITLE-------------
 \par{\centering
 		{\hspace{-2mm}\Huge \textsc{Archit Sharma}
-	}\\\large \textsc{Senior Undergraduate, IIT Kanpur}\\\normalsize \Letter\hspace{1mm}\href{mailto:architsh@iitk.ac.in}{architsh@iitk.ac.in} | \Mundus\hspace{1mm}\href{https://architsharma97.github.io/}{ architsharma97.github.io} | \faGithub \hspace{0mm} \href{https://github.com/architsharma97/}{architsharma97} \par}
+	}\\\large \textsc{AI Resident, Google Brain, Mountain View}\\\normalsize \Letter\hspace{1mm}\href{mailto:archit97sharma@gmail.com}{archit97sharma@gmail.com} | \Mundus\hspace{1mm}\href{https://architsharma97.github.io/}{ architsharma97.github.io} | \faGithub \hspace{0mm} \href{https://github.com/architsharma97/}{architsharma97} \par}
 	
 %--------------------SECTIONS-----------------------------------
 %Section: Education
 \section{Education}
-\begin{tabular}{rl}	
-\textsc{2018} & \large Bachelor of Technology, \textbf{Indian Institute of Technology, Kanpur}\\
-         & \textit{Major}: Electrical Engineering \\
+\begin{tabular}{rp{16.5cm}}	
+\textsc{2018} & B. Tech in Electrical Engineering, \textbf{Indian Institute of Technology, Kanpur}  \hfill \textit{GPA: \textsc{9.9/10}}\\
          & \textit{Minors}: Machine Learning, Linguistic Theory\\
-         & {CPI}: \textsc{9.9/10} \\
+         & \small $\bullet$ Awarded General Proficiency Medal for graduating with the highest GPA in Electrical Engineering\\
+         & \small $\bullet$ Awarded Proficiency Prize for outstanding undergraduate research project\\
+         & \small $\bullet$ Awarded Motorola Gold Medal for outstanding overall achievement in CS/EE undergraduates \\
+        %  & {CPI}: \textsc{9.9/10} \\
         %  & \\
 % \textsc{2014} & \large DAV Public School, Amritsar\\
 %               & AISSCE, XII Board: 95/100\\
@@ -106,6 +108,18 @@ ItalicFont = Fontin-Italic.otf
 \section{Research Experience}
 \centering
 \begin{longtable}{r|p{15cm}}
+% Google Brain
+\textsc{Jul 2018} & \large \textsc{Google Brain}\\
+(Ongoing) & \textit{AI Resident at Google, Mountain View}
+
+\begin{itemize}
+\item Research with a focus on \textbf{multi-task and unsupervised deep reinforcement learning}. Also exploring connections between \textbf{probabilistic modelling and reinforcement learning}.
+\item Currently working on proposals for unsupervised skill-learning and prior-based task transfer.
+\vspace*{-\baselineskip}
+\end{itemize}
+\\
+\multicolumn{2}{c}{}\\
+
 % MILA
 \textsc{May-Aug 2017} & \large \textsc{Synthetic Gradients across Discrete Latent Variables}\\
 \faGithub \hspace{1mm}\href{https://github.com/architsharma97/MNIST}{github} & \textit{Research Intern at Montreal Institute of Learning Algorithms (MILA)}\\
@@ -121,20 +135,20 @@ ItalicFont = Fontin-Italic.otf
 
 \multicolumn{2}{c}{}\\
 % Mixture of Bayesian SVMs
-\textsc{Ongoing} & \large \textsc{Flexible Framework for Large-Margin Mixture-of-Experts}\\
+\textsc{Under Review} & \large \textsc{Flexible Framework for Large-Margin Mixture-of-Experts}\\
 \faFilePdfO \hspace{1mm}\href{https://architsharma97.github.io/resources/mbs.pdf}{presentation} & \textit{Undergraduate Project at IIT Kanpur}\\
 \faFilePdfO \hspace{1mm}\href{https://architsharma97.github.io/resources/mbs_report.pdf}{report} & \textit{Supervisor}: \textsc{Dr. Piyush Rai}
 \begin{itemize}
  \item  Leveraging recently developed \textbf{latent variable augmentation techniques}, we reformulate mixture-of-experts to provide efficient EM based learning algorithms.
- \item Our formulation provides \textbf{closed form EM updates} for a variety of gating networks, and even for \textbf{hierarchical mixture-of-experts}.
- \item Our models \textbf{achievs competitive results on various binary classification} datasets. \vspace*{-\baselineskip}
+ \item Our formulation provides \textbf{closed form EM updates} for a variety of gating networks, including \textbf{hierarchical mixture-of-experts}.
+ \item Our models \textbf{achieves competitive results on various binary classification} benchmarks. \vspace*{-\baselineskip}
 \end{itemize}\\
 
 \multicolumn{2}{c}{}\\
 % Texas A&M
 \textsc{May-Jul 2016} & \large \textsc{Privacy Analysis of DSRC enabled Cars}\\
-& \textit{Research Intern at Texas A\&M University}\\
-& \textit{Supervisor}: \textsc{Dr. Srinivas Shakkottai}
+& \textit{Research Intern at Texas A\&M University under Dr. Srinivas Shakkottai}
+% & \textit{Supervisor}: \textsc{Dr. Srinivas Shakkottai}
 \begin{itemize}
  \item Analyzed user privacy in DSRC enabled cars (vehicle to vehicle/infrastructure communication).
 %  \item Broke down 229 GB \textsc{BSM dataset} from Ann Arbor, Michigan in 6 hours by processing on 20 cores of IBM's Ada Cluster, reducing from expected computation time of 4 days.
@@ -146,12 +160,29 @@ ItalicFont = Fontin-Italic.otf
 \section{Selected Projects}
 \centering
 \begin{longtable}{r|p{15cm}}
-\textsc{Ongoing} & \large \textsc{Improved Variational Inference using Real NVP}\\
+% Robust EM
+\textsc{Jan-Apr 2018} & \large \textsc{Robust Expectation Maximization}\\
+\faFilePdfO \hspace{1mm} \href{https://architsharma97.github.io/resources/cs777a-presentation.pdf}{presentation} & \textit{Course Project for Statistical and Algorithmic Learning Theory under Dr. Purushottam Kar}
+\begin{itemize}
+\item Constructed a proposal for expectation maximization robust to adversarial noise.
+\item Validated the proposed algorithm for Gaussian Mixture Models.\vspace*{-\baselineskip}
+\end{itemize}\\
+\multicolumn{2}{c}{}\\
+
+% Real NVP improves VI
+\textsc{Aug-Nov 2017} & \large \textsc{Improved Variational Inference using Real NVP}\\
 \faFilePdfO \hspace{1mm} \href{https://architsharma97.github.io/resources/improvedvi.pdf}{report} & \textit{Course Project for Probabilistic Machine Learning under Dr. Piyush Rai}
 \begin{itemize}
-\item Proposed \textbf{Real NVP} as an alternate to Normalizing Flows in a VAE setup for generative modelling of images.
-\item Compared Real NVP and Normalizing Flows on \textbf{Binarized MNIST, with promising initial results for the former}.
-\item Further analysis with higher number of transformations, and on different datasets planned. \vspace*{-\baselineskip}
+\item Proposed \textbf{Real NVP} as an alternate to Normalizing Flows for generative modelling.
+\item Compared results on \textbf{Binarized MNIST, with promising initial results for the former}.\vspace*{-\baselineskip}
+\end{itemize}\\
+\multicolumn{2}{c}{}\\
+% Dehazing GANs
+\textsc{Mar-Apr 2017} & \large \textsc{GANs for Single Image Dehazing}\\
+\faFilePdfO \hspace{1mm} \href{https://architsharma97.github.io/resources/dehazing_gans_poster.pdf}{poster} & \textit{Course Project for Visual Recognition under Dr. Vinay P. Namboodiri}
+\begin{itemize}
+\item Formulated a \textbf{deep architecture, along the lines of pix2pix, for single image-dehazing} with a weighted combination of GAN and L1 loss.\vspace*{-\baselineskip}
+% \item Following the implementation of pix2pix for image-to-image translation, designed a GAN based architecture for image dehazing. This was the first work to try dehazing images in a GAN based setup. Tested the effect of reweighting L1 and Adversarial loss. \item Visually appealing results were obtained for 256x256 images, which were comparable to state-of-the-art techniques for dehazing images.
 \end{itemize}\\
 \multicolumn{2}{c}{}\\
 % Visual Dialog
@@ -163,23 +194,15 @@ ItalicFont = Fontin-Italic.otf
 % \item Also implemented a late fusion encoder. The performance for both the encoders was comparable to those reported in the original paper.
 \end{itemize}\\
 \multicolumn{2}{c}{}\\
-% Dehazing GANs
-\textsc{Mar-Apr 2017} & \large \textsc{GANs for Single Image Dehazing}\\
-\faFilePdfO \hspace{1mm} \href{https://architsharma97.github.io/resources/dehazing_gans_poster.pdf}{poster} & \textit{Course Project for Visual Recognition under Dr. Vinay P. Namboodiri}
-\begin{itemize}
-\item Formulated a \textbf{deep architecture, along the lines of pix2pix, for single image-dehazing} with a weighted combination of GAN and L1 loss.\vspace*{-\baselineskip}
-% \item Following the implementation of pix2pix for image-to-image translation, designed a GAN based architecture for image dehazing. This was the first work to try dehazing images in a GAN based setup. Tested the effect of reweighting L1 and Adversarial loss. \item Visually appealing results were obtained for 256x256 images, which were comparable to state-of-the-art techniques for dehazing images.
-\end{itemize}\\
-\multicolumn{2}{c}{}\\
 % Video Summarization
-\textsc{Sep-Nov 2016} & \large \textsc{Video Summarization}\\
-\faGithub \hspace{1mm} \href{http://github.com/architsharma97/VideoSummarization/}{github} & \textit{Course Project for Machine Learning under Dr. Piyush Rai }
-\begin{itemize}
-\item Implemented and compared different video summarization techniques like VSUMM, VGRAPH on different features extracted at the frame level.\vspace*{-\baselineskip}
+% \textsc{Sep-Nov 2016} & \large \textsc{Video Summarization}\\
+% \faGithub \hspace{1mm} \href{http://github.com/architsharma97/VideoSummarization/}{github} & \textit{Course Project for Machine Learning under Dr. Piyush Rai }
+% \begin{itemize}
+% \item Implemented and compared different video summarization techniques like VSUMM, VGRAPH on different features extracted at the frame level.\vspace*{-\baselineskip}
 % \item Implemented VSUMM, a \textit{clustering based algorithm} using features extracted at frame level. Features tested upon include \textsc{color histograms} and \textsc{fc7 layer features} of \textsc{VGG16} architecture.
 % \item Implemented a \textit{deep learning model} using two opposite moving \textsc{LSTM} layers combined using a \textsc{1D convolution} layer.
 % \item Implemented a custom version of VGRAPH and SIFT based algorithm.\vspace*{-\baselineskip}
-\end{itemize}\\
+% \end{itemize}\\
 % \multicolumn{2}{c}{}\\
 % % Visual Question Answering
 % Dec 2015 & \large \textsc{Visual Question Answering using Deep Neural Nets}\\
@@ -204,12 +227,11 @@ ItalicFont = Fontin-Italic.otf
 %  \item Worked on \textsc{GoSuraksheit}, an android based application for women safety. Integrated the new \textsc{Facebook API} for quick status updates containing custom message and user location in case of emergency. \vspace*{-\baselineskip}
 % \end{itemize}\\
 \end{longtable}
-
 %Section: Achievements
 \section{Achievements}
 \begin{tabular}{rl}
-2018 & \textbf{Departmental Rank 1} out of 140 undergraduates in Electrical
-Engineering, IIT Kanpur.\\
+% 2018 & \textbf{Departmental Rank 1} out of 140 undergraduates in Electrical
+% Engineering, IIT Kanpur.\\
 2018 & Awarded \textbf{Academic Excellence Award} by IIT Kanpur for \textsc{consecutive academic years 2014-17}.\\
 2018 & Awarded \textsc{Lalit Narain Das Memorial Scholarhip} by IIT Kanpur for the best B.Tech final year student in EE.\\
 2018 & Awarded $A^*$ for \textbf{exceptional performance in 11 courses}.\\
@@ -249,15 +271,15 @@ Tools & Tensorflow, Theano, Git, NumPy, Scikit-Learn
 \section{Miscellaneous}
 \begin{longtable}{p{16cm}}
 \large \textsc{Talks}: \normalsize Presented a \faFilePdfO  \hspace{1mm}\href{https://architsharma97.github.io/resources/mlrd_talk.pdf}{talk} on \textbf{Gradients for Discrete Latent Variables} on Machine Learning Research Day (MLRD) organized by SIGML, IIT Kanpur.\\ \\
-\large \textsc{Project Mentor}: \normalsize Mentoring student projects in ``Topics in Probabilistic Modelling and Inference''. Chosen on the basis of exceptional performance in courses and relevant research experience.\\ \\
+\large \textsc{Project Mentor}: \normalsize Mentored student projects in ``Topics in Probabilistic Modelling and Inference''. Chosen on the basis of exceptional performance in courses and relevant research experience.\\ \\
 \large \textsc{Competitive Programming}: \normalsize
-\href{https://www.codechef.com/users/architsh}{\textsc{Codechef Long Challenge Rating:}} 8190.89. Over 80 problems solved on \href{http://www.spoj.com/users/architsh/}{SPOJ}. Secured \textbf{63 rank} in online qualification round for \textbf{ACM ICPC Regionals 2017}, appearing thereafter in \textsc{Amritapuri and Chennai regionals}. Also, appeared in Round 2 of Facebook Hackercup 2017.\\ \\
+\href{https://www.codechef.com/users/architsh}{\textsc{Codechef Long Challenge Rating:}} 8190.89. Over 80 problems solved on \href{http://www.spoj.com/users/architsh/}{SPOJ}. Secured \textbf{63 rank} in online qualification round for \textbf{ACM ICPC Regionals 2017}, appearing thereafter in \textsc{Amritapuri and Chennai regionals}. Appeared in Round 2 of Facebook Hackercup 2017.\\ \\
 \large \textsc{Standardized Scores}: \normalsize
 \textbf{GRE}: 336/340, \textbf{TOEFL}: 115/120.\\ \\
 \large \textsc{Software Corner Manager, Techkriti'16}: \normalsize
 Handled logistics for software events in Techkriti, \textit{annual technical festival of IIT Kanpur}.\\ \\
 \large \textsc{Android Development}: \normalsize
-Integrated the Facebook API in \textit{GoSuraksheit}, a women safety application developed at \textsc{Hughes Systique}.Developed an android application to collect location and travel data at \textsc{Texas A\&M University}. \\ \\
+Integrated the Facebook API in \textit{GoSuraksheit}, a women safety application developed at \textsc{Hughes Systique}. Developed an android application to collect location and travel data at \textsc{Texas A\&M University}. \\ \\
 \large \textsc{NASA Ames Space Settlement Design Contest, 2012}: \normalsize \textbf{Awarded first position} in IX-X category amongst \textbf{participants from over 10 countries} for designing a space settlement capable of hosting nearly 10,000 humans independently.\\ \\
 \large \textsc{Student Guide, Counselling Service}: \normalsize
 Mentored seven freshmen through their first year.\\ \\
